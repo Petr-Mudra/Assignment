@@ -1,0 +1,8 @@
+from python:3.11.5-alpine3.18
+
+RUN pip install flask
+RUN pip install flask_wtf
+RUN pip install secret_key_generator
+RUN pip install bs4
+RUN pip install requests
+RUN pip install lxml

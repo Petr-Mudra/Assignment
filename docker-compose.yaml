@@ -1,0 +1,14 @@
+version: "3"
+services:
+  assignment:
+    container_name: assignment
+    image: petrmudra/assignment:1.0.0
+    build: ./src
+    working_dir: /work
+    entrypoint: /bin/sh
+    stdin_open: true
+    tty: true
+    volumes:
+    - ./src:/work
+    ports:
+    - 5003:5000
